@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/noteicon.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Note Taker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="modal-backdrop" data-js="modal-backdrop">
+      <div class="modal">
+        <div class="modal__header">
+          <h2 class="modal__title" data-js="modal-title">Criar uma nota</h2>
+          <ion-icon name="close" class="modal__close" data-js="close-modal"></ion-icon>
+        </div>
+        <form action="#" class="modal__form" data-js="modal-form">
+          <div class="form__control">
+            <label for="title">Titulo</label>
+            <input type="text" name="title" id="title" placeholder="Titulo da nota">
+          </div>
+          <div class="form__control">
+            <label for="content">Conteudo</label>
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="Conteudo da nota"></textarea>
+          </div>
+          <button type="submit" class="modal__submit" data-js="modal-submit">Criar Nota</button>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container container--header">
+        <a href="https://github.com/lucasmsoares1" target="_blank" class="git__link">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <div class="header__search">
+          <input type="text" placeholder="Filtrar Nota" data-js="filter">
+          <button class="header__theme-button" style="box-shadow: none;">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container container--notes" data-js="notes-area">
+        <button class="add-note" data-js="add-note">
+          <div class="add-note__plus" data-js="add-note">
+            <ion-icon name="add-outline" data-js="add-note"></ion-icon>
+          </div>  
+          <h3 class="add-note__title" data-js="add-note">Adicionar Nota</h3>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div class="container container--footer">
+        <span class="footer__link">
+          Feito por Lucas Soares
+        </span>
+        <span>2023</span>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
