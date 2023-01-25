@@ -28,10 +28,10 @@ Note Taker - é uma aplicação de anotações que auxilia o usuario na organiza
 
 ## 🤔 Como testar
 
-O site esta hospedado no vercel: []()
+O site esta hospedado no vercel: [Note-Taker](https://notetakerlms.vercel.app/)
 
 Ou então, faça um clone :
 
 ```sh
-  $ git clone 
+  $ git clone https://github.com/lucasmsoares1/note-taker
 ```
